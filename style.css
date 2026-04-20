@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+     display: flex;
+    flex-direction: column; /* Faz o layout em coluna */
+    min-height: 100vh; /* Garante que ocupe o mínimo da altura da tela */
+}
+
+
+main {
+    flex: 1; /* Permite que o main preencha o espaço restante */
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+}
+
+ul li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover, h1:hover, h2:hover{
+    color: #FF0000;
+    transition: color 0.3s ease;
+}
+
+.cabecalho {
+    background-color:  rgb(214, 213, 200);
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+}
+
+
+.menu-navegacao ul{
+    display: flex;
+    gap: 10px;
+}
+
+.conteudo {
+    display: flex;
+    width: 80%;
+    margin: 60px auto;
+    gap: 5px;
+    }
+
+
+.conteudo-principal {
+    background-color: rgb(209, 209, 207);
+    border-radius: 10px;
+    padding: 10px 50px;
+}
+
+.barra-lateral {
+    background-color: rgb(243, 235, 124);
+    border-radius: 10px;
+    padding: 10px 50px;
+}
+
+.cards{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card1, .card2, .card3, .card4{
+    border: 1px solid #FF0000;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rodape {
+    background-color: rgb(214, 213, 200); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 1.563rem;
+}
+
+@media (max-width: 825px) {
+    .rodape {
+        font-size: 1.25rem;
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width: 340px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .conteudo {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 240px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
